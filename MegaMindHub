@@ -1,0 +1,816 @@
+local ScreenGui = Instance.new("ScreenGui")
+
+local WelcomeFrame = Instance.new("ImageLabel")
+
+local DropShadow = Instance.new("ImageLabel")
+
+local H = Instance.new("TextButton")
+
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+
+local TextLabel = Instance.new("TextLabel")
+
+local G = Instance.new("TextButton")
+
+local TextButton_Roundify_12px_2 = Instance.new("ImageLabel")
+
+local ChooseGame = Instance.new("ImageLabel")
+
+local DropShadow_2 = Instance.new("ImageLabel")
+
+local BW = Instance.new("TextButton")
+
+local A = Instance.new("TextButton")
+
+local DS = Instance.new("TextButton")
+
+local CS = Instance.new("TextButton")
+
+local PSXAFU = Instance.new("TextButton")
+
+local X = Instance.new("TextButton")
+
+local Hubs = Instance.new("ImageLabel")
+
+local DropShadow_3 = Instance.new("ImageLabel")
+
+local SBB = Instance.new("TextButton")
+
+local OH = Instance.new("TextButton")
+
+local X_2 = Instance.new("TextButton")
+
+local S2 = Instance.new("TextLabel")
+
+local player = game.Players.LocalPlayer
+
+
+
+
+--Properties:
+
+
+
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+
+
+
+WelcomeFrame.Name = "WelcomeFrame"
+
+WelcomeFrame.Parent = ScreenGui
+
+WelcomeFrame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+
+WelcomeFrame.BackgroundTransparency = 1.000
+
+WelcomeFrame.Position = UDim2.new(0.213154688, 0, 0.0603015088, 0)
+
+WelcomeFrame.Size = UDim2.new(0, 521, 0, 491)
+
+WelcomeFrame.ZIndex = 2
+
+WelcomeFrame.Image = "rbxassetid://3570695787"
+
+WelcomeFrame.ImageColor3 = Color3.fromRGB(27, 27, 27)
+
+WelcomeFrame.ScaleType = Enum.ScaleType.Slice
+
+WelcomeFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+
+WelcomeFrame.SliceScale = 0.667
+WelcomeFrame.Active = true
+WelcomeFrame.Dragable = true
+
+
+
+
+DropShadow.Name = "DropShadow"
+
+DropShadow.Parent = WelcomeFrame
+
+DropShadow.BackgroundColor3 = Color3.fromRGB(124, 177, 55)
+
+DropShadow.BackgroundTransparency = 1.000
+
+DropShadow.BorderSizePixel = 0
+
+DropShadow.Position = UDim2.new(0, 1, 0, 1)
+
+DropShadow.Size = UDim2.new(1.02495205, 0, 1.01832998, 0)
+
+DropShadow.Image = "rbxassetid://3570695787"
+
+DropShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+DropShadow.ScaleType = Enum.ScaleType.Slice
+
+DropShadow.SliceCenter = Rect.new(100, 100, 100, 100)
+
+DropShadow.SliceScale = 0.667
+
+
+
+
+H.Name = "H"
+
+H.Parent = WelcomeFrame
+
+H.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+H.BackgroundTransparency = 1.000
+
+H.BorderSizePixel = 0
+
+H.Position = UDim2.new(0.322456747, 0, 0.513238311, 0)
+
+H.Size = UDim2.new(0, 200, 0, 50)
+
+H.ZIndex = 3
+
+H.Font = Enum.Font.FredokaOne
+
+H.Text = "Hubs"
+
+H.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+H.TextScaled = true
+
+H.TextSize = 14.000
+
+H.TextWrapped = true
+
+
+
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+
+TextButton_Roundify_12px.Parent = H
+
+TextButton_Roundify_12px.Active = true
+
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+TextButton_Roundify_12px.Selectable = true
+
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+
+TextButton_Roundify_12px.ZIndex = 2
+
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(4, 4, 4)
+
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextButton_Roundify_12px.SliceScale = 0.120
+
+
+
+
+TextLabel.Parent = WelcomeFrame
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel.Position = UDim2.new(0.322456837, 0, 0.33401221, 0)
+
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+
+TextLabel.ZIndex = 2
+
+TextLabel.Font = Enum.Font.FredokaOne
+
+TextLabel.TextColor3 = Color3.fromRGB(254, 254, 254)
+
+TextLabel.TextScaled = true
+
+TextLabel.TextSize = 14.000
+
+TextLabel.TextWrapped = true
+
+if player then
+
+TextLabel.Text = "Thanks for using MegaMindHub "..player.Name.."!"
+
+end
+
+local delay2 = 0.3
+
+local TL = TextLabel
+
+while true do
+
+TL.TextColor3 = Color3.new(255, 0, 0)
+
+wait(delay2)
+
+TL.TextColor3 = Color3.new(1, 0.333333, 0)
+
+wait(delay2)
+
+TL.TextColor3 = Color3.new(1, 1, 0)
+
+wait(delay2)
+
+TL.TextColor3 = Color3.new(0, 0.333333, 1, 0)
+
+wait(delay2)
+
+TL.TextColor3 = Color3.new(0, 0.482353, 1)
+
+wait(delay2)
+
+TL.TextColor3 = Color3.new(0.333333, 0, 0.498039)
+
+wait(delay2)
+
+end
+
+
+
+
+G.Name = "G"
+
+G.Parent = WelcomeFrame
+
+G.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+G.BackgroundTransparency = 1.000
+
+G.BorderSizePixel = 0
+
+G.Position = UDim2.new(0.322456747, 0, 0.643584549, 0)
+
+G.Size = UDim2.new(0, 200, 0, 50)
+
+G.ZIndex = 3000
+
+G.Font = Enum.Font.FredokaOne
+
+G.Text = "Games"
+
+G.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+G.TextScaled = true
+
+G.TextSize = 14.000
+
+G.TextWrapped = true
+
+
+
+
+TextButton_Roundify_12px_2.Name = "TextButton_Roundify_12px"
+
+TextButton_Roundify_12px_2.Parent = G
+
+TextButton_Roundify_12px_2.Active = true
+
+TextButton_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+
+TextButton_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton_Roundify_12px_2.BackgroundTransparency = 1.000
+
+TextButton_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+
+TextButton_Roundify_12px_2.Selectable = true
+
+TextButton_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+
+TextButton_Roundify_12px_2.ZIndex = 2
+
+TextButton_Roundify_12px_2.Image = "rbxassetid://3570695787"
+
+TextButton_Roundify_12px_2.ImageColor3 = Color3.fromRGB(4, 4, 4)
+
+TextButton_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+
+TextButton_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextButton_Roundify_12px_2.SliceScale = 0.120
+
+
+
+
+ChooseGame.Name = "ChooseGame"
+
+ChooseGame.Parent = ScreenGui
+
+ChooseGame.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+
+ChooseGame.BackgroundTransparency = 1.000
+
+ChooseGame.Position = UDim2.new(0.168682009, 0, 0.102177553, 0)
+
+ChooseGame.Size = UDim2.new(0, 521, 0, 491)
+
+ChooseGame.Visible = false
+
+ChooseGame.ZIndex = 3
+
+ChooseGame.Image = "rbxassetid://3570695787"
+
+ChooseGame.ImageColor3 = Color3.fromRGB(27, 27, 27)
+
+ChooseGame.ScaleType = Enum.ScaleType.Slice
+
+ChooseGame.SliceCenter = Rect.new(100, 100, 100, 100)
+
+ChooseGame.SliceScale = 0.667
+
+
+
+
+DropShadow_2.Name = "DropShadow"
+
+DropShadow_2.Parent = ChooseGame
+
+DropShadow_2.BackgroundColor3 = Color3.fromRGB(124, 177, 55)
+
+DropShadow_2.BackgroundTransparency = 1.000
+
+DropShadow_2.BorderSizePixel = 0
+
+DropShadow_2.Position = UDim2.new(0, 1, 0, 1)
+
+DropShadow_2.Size = UDim2.new(1.02495205, 0, 1.01832998, 0)
+
+DropShadow_2.Image = "rbxassetid://3570695787"
+
+DropShadow_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+DropShadow_2.ScaleType = Enum.ScaleType.Slice
+
+DropShadow_2.SliceCenter = Rect.new(100, 100, 100, 100)
+
+DropShadow_2.SliceScale = 0.667
+
+
+
+
+BW.Name = "BW"
+
+BW.Parent = ChooseGame
+
+BW.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+BW.BorderSizePixel = 0
+
+BW.Position = UDim2.new(0.163147748, 0, 0.160896137, 0)
+
+BW.Size = UDim2.new(0, 200, 0, 50)
+
+BW.ZIndex = 3
+
+BW.Font = Enum.Font.FredokaOne
+
+BW.Text = "Bedwars"
+
+BW.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+BW.TextScaled = true
+
+BW.TextSize = 14.000
+
+BW.TextWrapped = true
+
+BW.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+
+end)
+
+
+
+
+A.Name = "A"
+
+A.Parent = ChooseGame
+
+A.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+A.BorderSizePixel = 0
+
+A.Position = UDim2.new(0.163147748, 0, 0.342158854, 0)
+
+A.Size = UDim2.new(0, 200, 0, 50)
+
+A.ZIndex = 3
+
+A.Font = Enum.Font.FredokaOne
+
+A.Text = "Aresnal"
+
+A.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+A.TextScaled = true
+
+A.TextSize = 14.000
+
+A.TextWrapped = true
+
+A.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+
+end)
+
+
+
+
+DS.Name = "DS"
+
+DS.Parent = ChooseGame
+
+DS.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+DS.BorderSizePixel = 0
+
+DS.Position = UDim2.new(0.182341605, 0, 0.549898148, 0)
+
+DS.Size = UDim2.new(0, 200, 0, 50)
+
+DS.ZIndex = 3
+
+DS.Font = Enum.Font.FredokaOne
+
+DS.Text = "Dunking Simulator"
+
+DS.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+DS.TextScaled = true
+
+DS.TextSize = 14.000
+
+DS.TextWrapped = true
+
+DS.MouseButton1Down:Connect(function()
+
+while wait(0.2) do
+
+pcall(function()
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-298.543976, 20.3333931, 841.82135, -0.0734398961, 4.93526553e-09, -0.997299671, -2.74371592e-09, 1, 5.15067233e-09, 0.997299671, 3.11457171e-09, -0.0734398961)
+
+wait(0.3)
+
+local args = {
+
+[1] = game:GetService("Players").LocalPlayer.Character:FindFirstChild("1").Handle,
+
+[2] = 93.680191040039,
+
+[3] = -300.3918762207,
+
+[4] = true,
+
+[5] = workspace.Hoop.Hoop,
+
+[6] = 0
+
+}
+
+
+
+
+game:GetService("ReplicatedStorage").Shot:FireServer(unpack(args))
+
+
+
+
+
+
+
+wait(0.2)
+
+local args = {
+
+[1] = 196,
+
+[2] = workspace.Hoop,
+
+[3] = 5
+
+}
+
+
+
+
+game:GetService("ReplicatedStorage").Score:FireServer(unpack(args))
+
+end) end
+
+end)
+
+
+
+
+CS.Name = "CS"
+
+CS.Parent = ChooseGame
+
+CS.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+CS.BorderSizePixel = 0
+
+CS.Position = UDim2.new(0.182341605, 0, 0.753564119, 0)
+
+CS.Size = UDim2.new(0, 200, 0, 50)
+
+CS.ZIndex = 3
+
+CS.Font = Enum.Font.FredokaOne
+
+CS.Text = "Clicking Simulator"
+
+CS.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+CS.TextScaled = true
+
+CS.TextSize = 14.000
+
+CS.TextWrapped = true
+
+CS.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LaDamage/releases/main/Clicker-Simulator.lua"))()
+
+end)
+
+
+
+
+PSXAFU.Name = "PSXAFU"
+
+PSXAFU.Parent = ChooseGame
+
+PSXAFU.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+PSXAFU.BorderSizePixel = 0
+
+PSXAFU.Position = UDim2.new(0.585412621, 0, 0.160896122, 0)
+
+PSXAFU.Size = UDim2.new(0, 200, 0, 50)
+
+PSXAFU.ZIndex = 3
+
+PSXAFU.Font = Enum.Font.FredokaOne
+
+PSXAFU.Text = "Pet sim x (April fools update)"
+
+PSXAFU.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+PSXAFU.TextScaled = true
+
+PSXAFU.TextSize = 14.000
+
+PSXAFU.TextWrapped = true
+
+PSXAFU.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TurfuGoldy/GoldenScripts/main/EzPets.lua"))()
+
+end)
+
+
+
+
+X.Name = "X"
+
+X.Parent = ChooseGame
+
+X.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+X.BorderSizePixel = 0
+
+X.Position = UDim2.new(0.585412621, 0, 0.321792245, 0)
+
+X.Size = UDim2.new(0, 200, 0, 50)
+
+X.ZIndex = 3
+
+X.Modal = true
+
+X.Font = Enum.Font.FredokaOne
+
+X.Text = "EXIT"
+
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+X.TextScaled = true
+
+X.TextSize = 14.000
+
+X.TextWrapped = true
+
+X.MouseButton1Down:Connect(function()
+
+ChooseGame.Visible = false
+
+WelcomeFrame.Visible = true
+
+end)
+
+
+
+
+Hubs.Name = "Hubs"
+
+Hubs.Parent = ScreenGui
+
+Hubs.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+
+Hubs.BackgroundTransparency = 1.000
+
+Hubs.Position = UDim2.new(0.213154688, 0, 0.0887772143, 0)
+
+Hubs.Size = UDim2.new(0, 521, 0, 491)
+
+Hubs.Visible = false
+
+Hubs.ZIndex = 3
+
+Hubs.Image = "rbxassetid://3570695787"
+
+Hubs.ImageColor3 = Color3.fromRGB(27, 27, 27)
+
+Hubs.ScaleType = Enum.ScaleType.Slice
+
+Hubs.SliceCenter = Rect.new(100, 100, 100, 100)
+
+Hubs.SliceScale = 0.667
+
+
+
+
+DropShadow_3.Name = "DropShadow"
+
+DropShadow_3.Parent = Hubs
+
+DropShadow_3.BackgroundColor3 = Color3.fromRGB(124, 177, 55)
+
+DropShadow_3.BackgroundTransparency = 1.000
+
+DropShadow_3.BorderSizePixel = 0
+
+DropShadow_3.Position = UDim2.new(0, 1, 0, 1)
+
+DropShadow_3.Size = UDim2.new(1.02495205, 0, 1.01832998, 0)
+
+DropShadow_3.Image = "rbxassetid://3570695787"
+
+DropShadow_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+
+DropShadow_3.ScaleType = Enum.ScaleType.Slice
+
+DropShadow_3.SliceCenter = Rect.new(100, 100, 100, 100)
+
+DropShadow_3.SliceScale = 0.667
+
+
+
+
+SBB.Name = "SFB"
+
+SBB.Parent = Hubs
+
+SBB.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+SBB.BorderSizePixel = 0
+
+SBB.Position = UDim2.new(0.182341591, 0, 0.498981684, 0)
+
+SBB.Size = UDim2.new(0, 379, 0, 50)
+
+SBB.ZIndex = 3
+
+SBB.Font = Enum.Font.FredokaOne
+
+SBB.Text = "Stiff Hub"
+
+SBB.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+SBB.TextScaled = true
+
+SBB.TextSize = 14.000
+
+SBB.TextWrapped = true
+
+SBB.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/Sniff-Hub/main/Sniff%20Hub'))()
+
+end)
+
+
+
+
+OH.Name = "OH"
+
+OH.Parent = Hubs
+
+OH.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+OH.BorderSizePixel = 0
+
+OH.Position = UDim2.new(0.182341591, 0, 0.279022396, 0)
+
+OH.Size = UDim2.new(0, 385, 0, 50)
+
+OH.ZIndex = 3
+
+OH.Font = Enum.Font.FredokaOne
+
+OH.Text = "Owl Hub"
+
+OH.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+OH.TextScaled = true
+
+OH.TextSize = 14.000
+
+OH.TextWrapped = true
+
+OH.MouseButton1Down:Connect(function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+
+end)
+
+
+
+
+X_2.Name = "X"
+
+X_2.Parent = Hubs
+
+X_2.BackgroundColor3 = Color3.fromRGB(4, 4, 4)
+
+X_2.BorderSizePixel = 0
+
+X_2.Position = UDim2.new(0.307101667, 0, 0.109979615, 0)
+
+X_2.Size = UDim2.new(0, 200, 0, 50)
+
+X_2.ZIndex = 3
+
+X_2.Modal = true
+
+X_2.Font = Enum.Font.FredokaOne
+
+X_2.Text = "EXIT"
+
+X_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+X_2.TextScaled = true
+
+X_2.TextSize = 14.000
+
+X_2.TextWrapped = true
+
+X_2.MouseButton1Down:Connect(function()
+
+Hubs.Visible = false
+
+WelcomeFrame.Visible = true
+
+end)
+
+
+
+
+S2.Name = "Cedit"
+
+S2.Parent = WelcomeFrame
+
+S2.BackgroundColor3 = Color3.fromRGB(4,4,4)
+
+S2.BorderSizePixel = 0
+
+S2.Position = UDim2.new(0.263, 0,0.09, 0)
+
+S2.Size = UDim2.new(0, 499, 0, 50)
+
+S2.ZIndex = 2
+
+S2.Font = Enum.Font.FredokaOne
+
+S2.Text = "MegaMind Hub By developerBacon (Please sub to me)"
+
+S2.TextColor3 = Color3.fromRGB(255,255,255)
+
+S2.TextScaled = false
+
+S2.TextSize = 20.000
+
+S2.TextWrapped = true
